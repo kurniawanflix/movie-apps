@@ -11,6 +11,10 @@
 		631DA5B829A31277004C0B55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631DA5B729A31277004C0B55 /* ContentView.swift */; };
 		631DA5BA29A31279004C0B55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 631DA5B929A31279004C0B55 /* Assets.xcassets */; };
 		631DA5BD29A31279004C0B55 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 631DA5BC29A31279004C0B55 /* Preview Assets.xcassets */; };
+		631DA5C629A473F0004C0B55 /* Merriweather-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 631DA5C529A473F0004C0B55 /* Merriweather-Regular.ttf */; };
+		631DA5C829A47448004C0B55 /* Mulish-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 631DA5C729A47448004C0B55 /* Mulish-Light.ttf */; };
+		631DA5CA29A47457004C0B55 /* Mulish-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 631DA5C929A47457004C0B55 /* Mulish-Medium.ttf */; };
+		631DA5CC29A477C5004C0B55 /* Merriweather-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 631DA5CB29A477C5004C0B55 /* Merriweather-Black.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,11 @@
 		631DA5B729A31277004C0B55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		631DA5B929A31279004C0B55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		631DA5BC29A31279004C0B55 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		631DA5C429A473D7004C0B55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		631DA5C529A473F0004C0B55 /* Merriweather-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Regular.ttf"; sourceTree = "<group>"; };
+		631DA5C729A47448004C0B55 /* Mulish-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Light.ttf"; sourceTree = "<group>"; };
+		631DA5C929A47457004C0B55 /* Mulish-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Medium.ttf"; sourceTree = "<group>"; };
+		631DA5CB29A477C5004C0B55 /* Merriweather-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Black.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +60,8 @@
 		631DA5B429A31277004C0B55 /* list-film-api */ = {
 			isa = PBXGroup;
 			children = (
+				631DA5C429A473D7004C0B55 /* Info.plist */,
+				631DA5C329A473C1004C0B55 /* font */,
 				631DA5B529A31277004C0B55 /* list_film_apiApp.swift */,
 				631DA5B729A31277004C0B55 /* ContentView.swift */,
 				631DA5B929A31279004C0B55 /* Assets.xcassets */,
@@ -65,6 +76,17 @@
 				631DA5BC29A31279004C0B55 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		631DA5C329A473C1004C0B55 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				631DA5C929A47457004C0B55 /* Mulish-Medium.ttf */,
+				631DA5CB29A477C5004C0B55 /* Merriweather-Black.ttf */,
+				631DA5C729A47448004C0B55 /* Mulish-Light.ttf */,
+				631DA5C529A473F0004C0B55 /* Merriweather-Regular.ttf */,
+			);
+			path = font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +148,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				631DA5BD29A31279004C0B55 /* Preview Assets.xcassets in Resources */,
+				631DA5C629A473F0004C0B55 /* Merriweather-Regular.ttf in Resources */,
+				631DA5CA29A47457004C0B55 /* Mulish-Medium.ttf in Resources */,
 				631DA5BA29A31279004C0B55 /* Assets.xcassets in Resources */,
+				631DA5C829A47448004C0B55 /* Mulish-Light.ttf in Resources */,
+				631DA5CC29A477C5004C0B55 /* Merriweather-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +295,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"list-film-api/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "list-film-api/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,6 +324,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"list-film-api/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "list-film-api/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
