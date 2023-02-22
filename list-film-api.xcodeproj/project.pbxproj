@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57266E7629A5BCAC007B5480 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57266E7529A5BCAC007B5480 /* API.swift */; };
+		57266E7829A5BCE9007B5480 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57266E7729A5BCE9007B5480 /* MovieModel.swift */; };
+		57266E7B29A5BDD6007B5480 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 57266E7A29A5BDD6007B5480 /* Alamofire */; };
+		57266E7E29A5BE33007B5480 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 57266E7D29A5BE33007B5480 /* SwiftyJSON */; };
+		57266E8129A5C16F007B5480 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 57266E8029A5C16F007B5480 /* SDWebImageSwiftUI */; };
 		631DA5B629A31277004C0B55 /* list_film_apiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631DA5B529A31277004C0B55 /* list_film_apiApp.swift */; };
 		631DA5B829A31277004C0B55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631DA5B729A31277004C0B55 /* ContentView.swift */; };
 		631DA5BA29A31279004C0B55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 631DA5B929A31279004C0B55 /* Assets.xcassets */; };
@@ -18,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57266E7529A5BCAC007B5480 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		57266E7729A5BCE9007B5480 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		631DA5B229A31277004C0B55 /* list-film-api.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "list-film-api.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		631DA5B529A31277004C0B55 /* list_film_apiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = list_film_apiApp.swift; sourceTree = "<group>"; };
 		631DA5B729A31277004C0B55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57266E8129A5C16F007B5480 /* SDWebImageSwiftUI in Frameworks */,
+				57266E7E29A5BE33007B5480 /* SwiftyJSON in Frameworks */,
+				57266E7B29A5BDD6007B5480 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +76,8 @@
 				631DA5B729A31277004C0B55 /* ContentView.swift */,
 				631DA5B929A31279004C0B55 /* Assets.xcassets */,
 				631DA5BB29A31279004C0B55 /* Preview Content */,
+				57266E7529A5BCAC007B5480 /* API.swift */,
+				57266E7729A5BCE9007B5480 /* MovieModel.swift */,
 			);
 			path = "list-film-api";
 			sourceTree = "<group>";
@@ -105,6 +117,11 @@
 			dependencies = (
 			);
 			name = "list-film-api";
+			packageProductDependencies = (
+				57266E7A29A5BDD6007B5480 /* Alamofire */,
+				57266E7D29A5BE33007B5480 /* SwiftyJSON */,
+				57266E8029A5C16F007B5480 /* SDWebImageSwiftUI */,
+			);
 			productName = "list-film-api";
 			productReference = 631DA5B229A31277004C0B55 /* list-film-api.app */;
 			productType = "com.apple.product-type.application";
@@ -133,6 +150,11 @@
 				Base,
 			);
 			mainGroup = 631DA5A929A31277004C0B55;
+			packageReferences = (
+				57266E7929A5BDD6007B5480 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				57266E7C29A5BE33007B5480 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				57266E7F29A5C16F007B5480 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 631DA5B329A31277004C0B55 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -163,7 +185,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57266E7829A5BCE9007B5480 /* MovieModel.swift in Sources */,
 				631DA5B829A31277004C0B55 /* ContentView.swift in Sources */,
+				57266E7629A5BCAC007B5480 /* API.swift in Sources */,
 				631DA5B629A31277004C0B55 /* list_film_apiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"list-film-api/Preview Content\"";
+				DEVELOPMENT_TEAM = 2W8TC22856;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "list-film-api/Info.plist";
@@ -322,6 +347,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"list-film-api/Preview Content\"";
+				DEVELOPMENT_TEAM = 2W8TC22856;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "list-film-api/Info.plist";
@@ -365,6 +391,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		57266E7929A5BDD6007B5480 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		57266E7C29A5BE33007B5480 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		57266E7F29A5C16F007B5480 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		57266E7A29A5BDD6007B5480 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57266E7929A5BDD6007B5480 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		57266E7D29A5BE33007B5480 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57266E7C29A5BE33007B5480 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		57266E8029A5C16F007B5480 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57266E7F29A5C16F007B5480 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 631DA5AA29A31277004C0B55 /* Project object */;
 }

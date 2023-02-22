@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct ContentView: View {
+  
+  @ObservedObject var nowPlaying = FetchData(endpoint: "now_playing")
+  
     var body: some View {
         NavigationView{
             ScrollView(.vertical){
@@ -33,59 +37,27 @@ struct ContentView: View {
                     .padding(.top, 10)
                     ScrollView(.horizontal, showsIndicators: false){
                         HStack(spacing: 20){
+                          ForEach(nowPlaying.moviesData, id: \.self) { dataTunggal in
                             VStack(alignment: .leading){
-                                Image("poster")
-                                    .resizable()
-                                    .frame(width: 143, height: 212)
-                                    .cornerRadius(8)
-                                    .shadow(radius: 10)
-                                Text("Spiderman: No Way Home")
-                                    .padding(4)
-                                    .font(.custom("Mulish-Medium", size: 14))
-                                    .lineLimit(1)
-                                HStack{
-                                    Image(systemName: "star.fill")
-                                        .foregroundColor(.yellow)
-                                    Text("9.1/10 IMDb")
-                                        .font(.custom("Mulish-Light", size: 12))
-                                }
-                                
+                              WebImage(url: URL(string: "https://image.tmdb.org/t/p/original/\(dataTunggal.posterPath)"))
+                                .resizable()
+                                .frame(width: 143, height: 212)
+                                .cornerRadius(8)
+                                .shadow(radius: 10)
+                              Text("\(dataTunggal.nama)")
+                                .padding(4)
+                                .font(.custom("Mulish-Medium", size: 14))
+                                .lineLimit(1)
+                              HStack{
+                                Image(systemName: "star.fill")
+                                  .foregroundColor(.yellow)
+                                Text("9.1/10 IMDb")
+                                  .font(.custom("Mulish-Light", size: 12))
+                              }
+                              
                             }
                             .frame(width: 143, height: 240)
-                            VStack(alignment: .leading){
-                                Image("poster")
-                                    .resizable()
-                                    .frame(width: 143, height: 212)
-                                    .cornerRadius(8)
-                                    .shadow(radius: 10)
-                                Text("Spiderman: No Way Home")
-                                    .padding(4)
-                                    .font(.custom("Mulish-Medium", size: 14))
-                                HStack{
-                                    Image(systemName: "star.fill")
-                                        .foregroundColor(.yellow)
-                                    Text("9.1/10 IMDb")
-                                        .font(.custom("Mulish-Light", size: 12))
-                                }
-                            }
-                            .frame(width: 143, height: 240)
-                            VStack(alignment: .leading){
-                                Image("poster")
-                                    .resizable()
-                                    .frame(width: 143, height: 212)
-                                    .cornerRadius(8)
-                                    .shadow(radius: 10)
-                                Text("Spiderman: No Way Home")
-                                    .padding(4)
-                                    .font(.custom("Mulish-Medium", size: 14))
-                                HStack{
-                                    Image(systemName: "star.fill")
-                                        .foregroundColor(.yellow)
-                                    Text("9.1/10 IMDb")
-                                        .font(.custom("Mulish-Light", size: 12))
-                                }
-                            }
-                            .frame(width: 143, height: 240)
+                          }
                         }
                         .padding()
                         .padding(.bottom, 20)
