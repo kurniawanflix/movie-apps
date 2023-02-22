@@ -11,7 +11,24 @@ import SwiftUI
 struct list_film_apiApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView{
+                ContentView()
+                    .tabItem {
+                        Image(systemName: "house")
+                        Text("Home")
+                    }
+                Text("Ticket View")
+                    .tabItem{
+                        Image(systemName: "ticket")
+                        Text("Ticket")
+                    }
+                Text("Saved View")
+                    .tabItem{
+                        Image(systemName: "bookmark")
+                        Text("Saved")
+                    }
+            }
+            .background(Color.white)
         }
     }
 }

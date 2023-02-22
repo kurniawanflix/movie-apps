@@ -8,7 +8,10 @@
 import Foundation
 
 struct Movie: Codable, Hashable {
-  var id: Int
-  var nama: String
-  var posterPath: String
+    var id: Int
+    var nama: String
+    var posterPath: String
+    var voteAverage: Double
+    var releaseDate: String
+    var overview: String
 }
